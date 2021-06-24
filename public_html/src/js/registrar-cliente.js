@@ -11,6 +11,6 @@ document.querySelector("#clients-form").addEventListener('submit', () => {
   
 let jsonCliente = JSON.stringify(cliente);
   
-  alert(jsonCliente);
+  envia(jsonCliente, "cliente");
   
 });
