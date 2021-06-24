@@ -28,6 +28,7 @@ body {
 
 header {
   margin-top: 60px;
+  padding: 15px;
 }
 
 h1 {
@@ -50,15 +51,21 @@ main {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
   color: #fff;
-  margin-bottom: 15px;
 }
 
 a:hover {
   cursor: pointer;
+}
+
+/* Homepage */
+
+#welcome {
+  text-align: center;
 }
 
 /* Forms & inputs */
@@ -80,7 +87,7 @@ form {
   max-width: 90vw;
 }
 
-form input {
+form input, form select {
   background: transparent;
   padding: 15px 20px;
   margin: 15px 0 30px 0;
@@ -99,23 +106,14 @@ form input {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-form input[type=submit], form input[type=number] {
-  display: block;
-}
-
-form input:hover {
+form input:hover, form select:hover {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
 }
 
-form input[type="text"]:focus, form input[type="number"]:focus {
+form input[type="text"]:focus, form input[type="number"]:focus, form select:focus {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
-}
-
-.radio-group input, .radio-group label {
-  margin: 0; 
-  padding: 0;
 }
 
 form button[type=submit] {
